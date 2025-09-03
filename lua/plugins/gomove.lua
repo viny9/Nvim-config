@@ -1,6 +1,6 @@
 return {
-  "booperlv/nvim-gomove",
-  config = function()
-    require("gomove").setup()
-  end,
+	"booperlv/nvim-gomove",
+	config = function()
+		require("gomove").setup()
+	end,
 }
