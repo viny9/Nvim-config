@@ -29,11 +29,27 @@ return {
 				severity_sort = true,
 			})
 
-			local lspconfig = require("lspconfig")
-			lspconfig.ts_ls.setup({})
-			lspconfig.solargraph.setup({})
-			lspconfig.html.setup({})
-			lspconfig.lua_ls.setup({})
+			-- vim.lsp.config('lua_ls', {
+			-- 	cmd = {'lua-language-server' }, 
+			-- 	filetypes = { 'lua' },
+			-- 	root_markers = {
+			-- 	'luarc.json',
+			-- 	'luarc.jsonc',
+			-- 	'luacheckrc',
+			-- 	'.stylua.toml',
+			-- 	'stylua.toml',
+			-- 	'selene.toml',
+			-- 	'selene.yml',
+			-- 	'.git',
+			-- 	}
+			-- })
+
+			-- local lspconfig = require("lspconfig")
+			
+			-- lspconfig.ts_ls.setup({})
+			-- lspconfig.solargraph.setup({})
+			-- lspconfig.html.setup({})
+			-- lspconfig.lua_ls.setup({})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "df", vim.lsp.buf.definition, {})
